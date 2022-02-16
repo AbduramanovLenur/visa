@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Visa</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <form class="card__form">
+                <label class="card-number card__label card-mb" for="card-number">
+                    Card Number
+                    <input class="card-number__input card__input" type="text" id="card-number" data-js-number-input
+                        autocomplete="off">
+                </label>
+                <label class="card-name card__label card-mb" for="card-name">
+                    Card Holders
+                    <input class="card-name__input card__input" type="text" id="card-name" data-js-name-input
+                        maxlength="23" autocomplete="off">
+                </label>
+                <div class="card__info">
+                    <label class="card-month card__label" for="card-month">
+                        Entries Date
+                        <div class="card-month__box" id="card-month">
+                            <select class="card-month__select card__input card__select" data-js-month-select>
+                                <option value="Month" disabled>Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="card-year__select card__input card__select" data-js-year-select>
+                                <option value="Month" disabled>Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label class="card-cvv card__label" for="card-cvv">
+                        CVV
+                        <input class="card-cvv__input card__input" id="card-cvv" type="text" autocomplete="off"
+                            data-js-cvv-input>
+                    </label>
+                </div>
+                <button class="card__btn">
+                    Submit
+                </button>
+            </form>
+            <div class="card__wrapper">
+                <div class="card__side card__wrapper-front" data-js-wrapper>
+                    <div class="card__inner">
+                        <div class="card__pictures">
+                            <img class="card__chip" src="assets/img/chip.png" alt="chip">
+                            <img class="card__logo" src="assets/img/visa.png" alt="visa">
+                        </div>
+                        <div class="card__full-number" data-js-full-number>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number card__number--separator"></span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number card__number--separator"></span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number card__number--separator"></span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                            <span class="card__number">#</span>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__holder">
+                                <p class="card__subtitle">
+                                    Card Holder
+                                </p>
+                                <p class="card__name" data-js-name-text>
+                                    Full Name
+                                </p>
+                            </div>
+                            <div class="card__expires">
+                                <p class="card__subtitle">
+                                    Experies
+                                </p>
+                                <div class="card__box">
+                                    <p class="card__month" data-js-month-text>
+                                        MM
+                                    </p>
+                                    /
+                                    <p class="card__year" data-js-year-text>
+                                        YY
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__focus" data-js-focus-card></div>
+                    </div>
+                </div>
+                <div class="card__side card__wrapper-back" data-js-wrapper>
+                    <div class="card__band"></div>
+                    <div class="card__wrapper-content">
+                        <p class="card-cvv__title">
+                            CVV
+                        </p>
+                        <p class="card-cvv__text" data-js-cvv-text></p>
+                        <div class="card-pic">
+                            <img class="card__logo" src="assets/img/visa.png" alt="visa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
