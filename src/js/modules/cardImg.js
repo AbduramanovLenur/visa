@@ -4,7 +4,7 @@ const cardImg = (cardSrcImgSelector) => {
     const img = getRandomImg();
 
     srcImg.forEach(elem => {
-        elem.style.backgroundImage = `url(../assets/img/${img})`;
+        elem.style.backgroundImage = `url(assets/img/${img})`;
     });
 
     function getRandomImg() {
