@@ -10,7 +10,7 @@
 * Website for filling in data (Card number, card holder, date of registration and CVV number) on a VISA card;
 * The site is adapted for monitors of computers, laptops, tablets and phones;
 * The following technologies were used on the site: HTML, CSS, SCSS/SASS, JavaScript(EcmaScript6), GULP assembly;
-* When the site is reloaded, the back background card changes to a random image;
+* When the site is reloaded, the background of the card changes to a random image;
 
 <br>
 
